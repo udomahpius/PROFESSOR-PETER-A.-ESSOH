@@ -240,6 +240,11 @@ h6,
 }
 
 
+.fix-bg{
+    background-color: var(--primary);
+    opacity: 0.4;
+}
+
 /*** Facts ***/
 .facts {
     background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
