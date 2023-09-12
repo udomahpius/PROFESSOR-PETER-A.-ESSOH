@@ -242,7 +242,7 @@ h6,
 
 .fix-bg{
     background-color: var(--primary);
-    opacity: 0.4;
+    /* opacity: 0.4; */
 }
 
 /*** Facts ***/
