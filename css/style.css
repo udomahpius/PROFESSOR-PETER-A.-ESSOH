@@ -228,6 +228,21 @@ h6,
     background: url(../img/page-img.jpg), center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: soft-light;
+    background-color:#586e60;
+
+}
+.research-bg{
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    background: url(../img/bg-1.jpg), center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1000 !important;
+    background-color: #1a2920;
+    background-blend-mode: soft-light;
+
+
 }
 
 .page-header .breadcrumb-item,
