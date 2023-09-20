@@ -262,7 +262,12 @@ h6,
 
 /*** Facts ***/
 .facts {
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
+    background-image:url(../img/bg3.jpg);
+    background-color: var(--dark);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
 }
 
 
@@ -278,9 +283,14 @@ h6,
     height: 50%;
     top: 0;
     left: 0;
-    background: linear-gradient(var(--dark), var(--primary)), url(../img/bg.png);
+    background-image: url(../img/Peter.jpeg-removebg-preview.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
     background-blend-mode: soft-light;
-    z-index: -1;
+    background-color: #000B1C;
+    background-attachment: fixed;
+    z-index: -100;
 }
 
 
