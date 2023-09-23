@@ -113,3 +113,44 @@
     
 })(jQuery);
 
+
+// HIDE ITEMS
+
+// GETTING ELEMENTS
+let containerEle = document.querySelector('.show-all-button');
+let showTextEle = document.querySelector(".show-text");
+let arrowDown = document.querySelector('.ar-down');
+let arrowUp = document.querySelector('.ar-up');
+let displayContainer = document.querySelector(".show-all");
+let setToFalse = false;
+
+// SETTING TARGET
+
+arrowUp.classList.add('call-to-hide')
+displayContainer.classList.add('call-to-hide')
+
+// CONDITIONAL MANIPULATIONS
+containerEle.addEventListener('click', () => {
+    if (!setToFalse) {
+        arrowUp.classList.remove('call-to-hide');
+        arrowDown.classList.add('call-to-hide');
+        displayContainer.classList.remove('call-to-hide');
+        showTextEle.innerHTML = "Show Less";
+        setToFalse = true;
+    } else {
+        arrowUp.classList.add('call-to-hide');
+        arrowDown.classList.remove('call-to-hide');
+        displayContainer.classList.add('call-to-hide');
+        showTextEle.innerHTML = "Show More";
+        setToFalse = false;
+
+    }
+})
+
+document.querySelector(".assign").addEventListener('click', () => {
+    document.location.assign('../contact.html')
+});
+ 
+
+document.querySelector('.date').innerHTML = new Date().getFullYear()
+
